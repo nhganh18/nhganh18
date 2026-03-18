@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #d43f3a; /* Màu đỏ đặc trưng của FTU */
+    --bg-color: #f8f9fa;
+    --text-color: #2d3436;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    position: sticky; top: 0; z-index: 1000;
+}
+
+nav .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); }
+nav ul { display: flex; list-style: none; gap: 2rem; }
+nav ul li a { text-decoration: none; color: var(--text-color); font-weight: 600; transition: 0.3s; }
+nav ul li a:hover { color: var(--primary-color); }
+
+#hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                url('https://images.unsplash.com/photo-1521791136364-70860d732cfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    padding: 0 10%;
+}
+
+#hero h1 { font-size: 3.5rem; margin-bottom: 0.5rem; letter-spacing: 2px; }
+.subtitle { font-size: 1.2rem; color: #636e72; margin-bottom: 1.5rem; }
+.target-box { background: var(--primary-color); color: white; padding: 10px 20px; display: inline-block; border-radius: 5px; margin-bottom: 1.5rem; }
+.bio { max-width: 700px; margin: 0 auto 2rem; font-style: italic; }
+
+.btn-main {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+section { padding: 80px 15%; }
+.section-title { font-size: 2rem; margin-bottom: 3rem; text-align: center; color: var(--primary-color); }
+
+.card {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.card-header { display: flex; justify-content: space-between; align-items: center; }
+.date { font-weight: bold; color: #b2bec3; }
+.place { color: var(--primary-color); font-weight: 600; margin-top: -10px; }
+
+.skill-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+.skill-item { background: #fff; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+
+#contact { background: #fff; text-align: center; }
+.contact-grid { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+
+footer { background: #2d3436; color: white; text-align: center; padding: 2rem; }
